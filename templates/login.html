@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" href="/static/style.css">
+		<title>Login</title>
+	</head>
+	<body>
+		<div id="login">
+			<label for="username">Username: </label>
+			<input name="username" type="text"><br>
+			<label for="password">Password: </label>
+			<input name="password" type="password"><br>
+			<button onclick="login();">Login</button><br><br>
+			<innerLink onclick="goToRegister();">Create an account</innerLink>
+		</div>
+		<div id="register">
+			<label for="username">Username: </label>
+			<input name="username" type="text"><br>
+			<label for="password">Password: </label>
+			<input name="password" type="password"><br>
+			<label for="confirmation">Retype password: </label>
+			<input name="confirmation" type="password"><br>
+			<button onclick="try {register();} catch(e) {document.write(e)}">Register</button><br><br>
+			<innerLink onclick="goToLogin();">Go to login</innerLink>
+		</div>
+		<div id="loginStatus"></div>
+		<script src="/static/login.js"></script>
+	</body>
+</html>
