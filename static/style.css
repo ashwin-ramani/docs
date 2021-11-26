@@ -1,0 +1,16 @@
+#login {
+	display: block;
+}
+
+#register {
+	display: none;
+}
+
+innerLink {
+	color: blue;
+}
+
+innerLink:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
